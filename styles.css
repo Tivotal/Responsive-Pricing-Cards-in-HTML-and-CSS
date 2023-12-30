@@ -1,0 +1,126 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0b8c4c;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1090px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wrapper .card {
+  background: #fff;
+  width: calc(33% - 20px);
+  text-align: center;
+  padding: 15px 30px 30px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper .card .top {
+  height: 130px;
+  background: #0b8c4c;
+  color: #fff;
+  padding: 12px 0 0 0;
+  clip-path: polygon(0 0, 100% 0, 100% 53%, 49% 100%, 0 53%);
+}
+
+.wrapper .card .top .title {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.wrapper .card .top .price {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+
+.wrapper .card .top .price span {
+  font-size: 16px;
+}
+
+.wrapper .card .desc {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.wrapper .card .features .item {
+  margin-top: 25px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.wrapper .card .features .item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: #ddd;
+  height: 1px;
+  left: 0;
+  top: -12px;
+  border-radius: 25px;
+}
+
+.wrapper .card .features .item i {
+  color: #2db94d;
+}
+
+.wrapper .card .features .item i.fa-times {
+  color: #cd3241;
+}
+
+.wrapper .card .btn {
+  display: block;
+  height: 42px;
+  width: 100%;
+  background: #0b8c4c;
+  color: #fff;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+  border-radius: 3px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.wrapper .card .btn:hover {
+  filter: brightness(90%);
+}
+
+@media (max-width: 1000px) {
+  .wrapper .card {
+    width: calc(50% - 20px);
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 715px) {
+  .wrapper .card {
+    width: 100%;
+  }
+}
