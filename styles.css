@@ -41,7 +41,7 @@ body {
   background: #0b8c4c;
   color: #fff;
   padding: 12px 0 0 0;
-  clip-path: polygon(0 0, 100% 0, 100% 53%, 49% 100%, 0 53%);
+  clip-path: polygon(0 0, 100% 0, 100% 53%, 50% 100%, 0 53%);
 }
 
 .wrapper .card .top .title {
